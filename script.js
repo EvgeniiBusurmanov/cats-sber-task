@@ -4,12 +4,16 @@ const setRate = function (n) {
     let fill = "<img src='cat-fill.svg'>"
     let stroke = "<img src='cat-stroke.svg'>"
 
-    let rate = "", cnt = 10;
-
-    for (let i = 0; i < cnt; i++) {
-        rate += i < n ? fill : stroke;
+    let rate = "";
+    let fillQ = n;
+    let strokeQ = 10 - n;
+    for (let i = 1; i <= fillQ; i++) {
+        rate += fill
     }
-    return rate;
+    for (let j = 1; j <= strokeQ; j++) {
+        rate += stroke
+    }
+    return rate
 }
 
 const getItem = function (data) {
