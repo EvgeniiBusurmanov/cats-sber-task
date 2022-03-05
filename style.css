@@ -81,3 +81,55 @@ footer {
 .rate img {
     height: 10px;
 }
+
+
+
+.info-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0008;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.info-block.active {
+    display: flex;
+}
+.info-desk {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 0 50px;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    max-width: 1000px;
+}
+.info-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 50px;
+    color: dimgray;
+    top: 10px;
+    right: 10px;
+    cursor: pointer; 
+    width: 50px;
+    height: 50px;
+}
+.info-img {
+    width: 100%;
+
+}
+.information h2 {
+    font-family: "Comic Sans MS", sans-serif;
+    margin-bottom: 30px;
+}
+.information h3 {
+    margin-bottom: 30px;
+}
